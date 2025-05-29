@@ -9,7 +9,7 @@ dailyDate = dict(topNewsToday['top_news'][0])['news'][0]['publish_date'][0:10]
 dailyRow = ""
 
 for i in range(10):
-    dailyRow = dailyRow + str(dict(topNewsToday['top_news'][i])['news'][0]['id']) + "," + str(dict(topNewsToday['top_news'][i])['news'][0]['title']).replace(",","_")
+    dailyRow = dailyRow + str(dict(topNewsToday['top_news'][i])['news'][0]['id']) + "," + str(dict(topNewsToday['top_news'][i])['news'][0]['title']).replace(",","_") + ","
 
 
 with open("dailyNews.csv", "a") as f:
