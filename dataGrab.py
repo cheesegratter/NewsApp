@@ -1,11 +1,12 @@
 import requests
 import json
+from datetime import date
 
 def my_custom_function():
     #takes token from hidden file
     with open("token/token.txt") as tokenKey:
         token = tokenKey.read()
-    url = "https://api.worldnewsapi.com/top-news?source-country=us&language=en&date=2024-05-29"
+    url = "https://api.worldnewsapi.com/top-news?source-country=us&language=en&date=" + str(date.today())
     api_key = token
 
     headers = {
