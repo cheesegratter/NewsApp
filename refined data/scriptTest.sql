@@ -1,0 +1,1 @@
+CREATE TABLE TEST (newsID INT, fullText TEXT)
