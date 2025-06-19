@@ -1,1 +1,0 @@
-CREATE TABLE dailyNews (Date TEXT, INT newsID1, newsTitle1 TEXT, newsID2 INT, newsTitle2 TEXT, newsID3 INT, newsTitle3 TEXT, newsID4 INT, newsTitle4 TEXT, newsID5 INT, newsTitle5 TEXT, newsID6 INT, newsTitle6 TEXT, newsID7 INT, newsTitle7 TEXT, newsID8 INT, newsTitle8 TEXT, newsID9 INT, newsTitle9 TEXT, newsID10 INT, newsTitle10 TEXT)

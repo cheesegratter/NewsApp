@@ -1,3 +1,0 @@
--- database: ./newFullClean.db
-
-SELECT * FROM cleanDailyNews;
