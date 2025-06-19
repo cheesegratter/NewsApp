@@ -1,0 +1,1 @@
+SELECT DISTINCT newsID, REPLACE(fullText, '�', '') AS fullTextC FROM "newsFull";
