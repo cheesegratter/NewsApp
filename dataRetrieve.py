@@ -7,7 +7,7 @@ def topNews(formatedDayData):
     #takes token from hidden file
     with open("token/token.txt") as tokenKey:
         token = tokenKey.read()
-    url = "https://api.worldnewsapi.com/top-news?source-country=us&language=en&date=" + formatedDayData
+    url = "https://api.worldnewsapi.com/top-news?source-country=us&language=en&date=" + str(formatedDayData)
     api_key = token
 
     headers = {
@@ -52,7 +52,7 @@ def checkConditions(currDate, currHour, currStatus):
 
         #Appends the created daily row to the dailyNews.csv file
         with open("dailyNews.csv", "a") as f:
-            f.write("\n" + currDate + "," +  dailyRow[:-1])
+            f.write("\n" + str(currDate) + "," +  dailyRow[:-1])
         
         print("Script successfully run. \n")
 
